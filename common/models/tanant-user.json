@@ -1,0 +1,32 @@
+{
+  "name": "TanantUser",
+  "plural": "TanantUsers",
+  "base": "User",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "name": {
+      "type": "string"
+    },
+    "tanantId": {
+      "type": "string",
+      "required": true
+    },
+    "hight": {
+      "type": "number",
+      "required": true
+    }
+  },
+  "validations": [],
+  "relations": {
+    "tanant": {
+      "type": "belongsTo",
+      "model": "Tanant",
+      "foreignKey": ""
+    }
+  },
+  "acls": [  ],
+  "methods": {}
+}

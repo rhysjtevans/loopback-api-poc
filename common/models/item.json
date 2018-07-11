@@ -1,0 +1,32 @@
+{
+  "name": "Item",
+  "plural": "Items",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "name": {
+      "type": "string"
+    },
+    "tanantId": {
+      "type": "string",
+      "required": true
+    },
+    "colour": {
+      "type": "string",
+      "required": true
+    }
+  },
+  "validations": [],
+  "relations": {
+    "tanant": {
+      "type": "belongsTo",
+      "model": "Tanant",
+      "foreignKey": ""
+    }
+  },
+  "acls": [],
+  "methods": {}
+}

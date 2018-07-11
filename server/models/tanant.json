@@ -1,0 +1,30 @@
+{
+  "name": "Tanant",
+  "plural": "Tanants",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "name": {
+      "type": "string",
+      "required": true
+    }
+  },
+  "validations": [],
+  "relations": {
+    "TanantUsers": {
+      "type": "hasMany",
+      "model": "TanantUser",
+      "foreignKey": "tanantId"
+    },
+    "Items": {
+      "type": "hasMany",
+      "model": "Item",
+      "foreignKey": "tanantId"
+    }
+  },
+  "acls": [],
+  "methods": {}
+}
