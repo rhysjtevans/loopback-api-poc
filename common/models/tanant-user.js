@@ -9,14 +9,14 @@ module.exports = function(Tanantuser) {
   
   // operstionsl hookd for restrct access to the model
   Tanantuser.observe("access", function limitToTenant(ctx, next) {
-	console.log("tanantuser observe access");
+	  console.log("tanantuser observe access");
     if (ctx.query.tanantId) {
-	  console.log("if");
+	    console.log("if");
       var tanantId = ctx.query.tanantId;
       ctx.query.where = ctx.query.where || { tanantId: tanantId };
-      next();
     }else{
-		console.log("else");
-	}
+		  console.log("else");
+    }
+    next();
   });
 };
