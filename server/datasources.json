@@ -1,16 +1,7 @@
 {
-  "db2": {
-    "name": "db2",
-    "connector": "memory"
-  },
   "db": {
-    "host": "localhost",
-    "port": 27017,
-    "url": "",
-    "database": "",
-    "password": "",
     "name": "db",
-    "user": "",
-    "connector": "mongodb"
+    "connector": "memory"
   }
 }
+
