@@ -29,15 +29,24 @@
       "model": "Tanant",
       "foreignKey": ""
     }
+  }, 
+  "acls": [{
+    "accessType": "READ",
+    "principalType": "ROLE",
+    "principalId": "$everyone",
+    "permission": "ALLOW"
   },
-  "acls": [
-    {
-      "accessType": "*",
-      "principalType": "ROLE",
-      "principalId": "$unauthenticated",
-      "permission": "DENY",
-      "property": ""
-    }
-  ],
+  {
+    "accessType": "WRITE",
+    "principalType": "ROLE",
+    "principalId": "$everyone",
+    "permission": "ALLOW"
+  },
+  {
+    "accessType": "UPDATE",
+    "principalType": "ROLE",
+    "principalId": "$everyone",
+    "permission": "ALLOW"
+  }],
   "methods": {}
 }
