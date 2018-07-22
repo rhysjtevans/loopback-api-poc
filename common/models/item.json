@@ -6,6 +6,9 @@
   "options": {
     "validateUpsert": true
   },
+  "hidden": [
+    "tanantId"
+  ],
   "properties": {
     "name": {
       "type": "string"
@@ -26,7 +29,7 @@
       "model": "Tanant",
       "foreignKey": ""
     }
-  },
+  }, 
   "acls": [{
     "accessType": "READ",
     "principalType": "ROLE",
